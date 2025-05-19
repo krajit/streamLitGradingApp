@@ -1,8 +1,9 @@
 import streamlit as st
 from langchain.chat_models import init_chat_model
 
-# Initialize model (only do this once to save resources)
-model = init_chat_model("llama3-70b-8192", model_provider="groq")
+# # Initialize model (only do this once to save resources)
+# model = init_chat_model("llama3-70b-8192", model_provider="groq")
+model = init_chat_model("gpt-4o-mini", model_provider="openai")
 
 # Define the prompt template
 prompt_template = """
